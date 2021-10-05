@@ -16,7 +16,7 @@ public class MyWebsocketEndpoint {
 
     @OnOpen
     public void onOpen(Session client, EndpointConfig config) {
-        client.setMaxIdleTimeout(5000);
+        client.setMaxIdleTimeout(3000);
         System.out.println(client.getId() + " was connected.");
     }
 

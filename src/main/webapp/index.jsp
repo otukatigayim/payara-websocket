@@ -9,12 +9,12 @@
         ws.onclose = function(data) {
           console.log(data);
           if (data.code == 1000) {
-            setTimeout(connect, 100);
+            setTimeout(connect, 500);
           }
         }
       }
 
-      setTimeout(connect, 2000);
+      setTimeout(connect, 1000);
 
       </script>
   </head>
